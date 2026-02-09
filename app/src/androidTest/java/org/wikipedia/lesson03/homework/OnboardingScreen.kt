@@ -1,37 +1,62 @@
 package org.wikipedia.lesson03.homework
 
+import android.widget.LinearLayout
+import android.widget.ScrollView
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.button.MaterialButton
 import org.wikipedia.R
+import org.wikipedia.onboarding.OnboardingPageView
 
-val one = listOf(
+val skipButton = listOf(
     MaterialButton::class.java,
     R.id.fragment_onboarding_skip_button
 )
-val two = listOf(
-    MaterialButton::class.java,
-    R.id.fragment_onboarding_done_button
+val fragmentPager = listOf(
+    ViewPager2::class.java,
+    R.id.fragment_pager
 )
-val three = listOf(
-    MaterialButton::class.java,
-    R.id.fragment_onboarding_forward_button
+val onboardingPageView = listOf(
+    OnboardingPageView::class.java,
+    R.id.scrollView,
+    R.id.bottomOffset
 )
-val four = listOf(
-    MaterialButton::class.java,
-    R.id.fragment_onboarding_pager_container
+val scrollView = listOf(
+    ScrollView::class.java,
+    R.id.scrollViewContainer
 )
-val five = listOf(
-    MaterialButton::class.java,
-    R.id.fragment_onboarding_skip_button
+val scrollViewContainer = listOf(
+    LinearLayout::class.java,
+    R.id.imageViewCentered,
+    R.id.primaryTextView,
+    R.id.secondaryTextView,
+    R.id.tertiaryTextView
 )
-val six = listOf(
-    MaterialButton::class.java,
-    R.id.fragment_onboarding_skip_button
+val languageListContainer = listOf(
+    LinearLayout::class.java,
+    R.id.languagesList,
+    R.id.addLanguageButton
 )
-val seven = listOf(
-    MaterialButton::class.java,
-    R.id.fragment_onboarding_skip_button
+val languagesList = listOf(
+    RecyclerView::class.java,
+    R.id.option_label
 )
-val eight = listOf(
-    MaterialButton::class.java,
-    R.id.fragment_onboarding_skip_button
+val patrollerTasksThanks = listOf(
+    ConstraintLayout::class.java,
+    R.id.thankImage,
+    R.id.thankTitle,
+    R.id.thankContent
+)
+val patrollerTasksWatch = listOf(
+    ConstraintLayout::class.java,
+    R.id.watchImage,
+    R.id.watchTitle,
+    R.id.watchContent
+)
+val patrollerTasksTalk = listOf(
+    ConstraintLayout::class.java,
+    R.id.talkImage,
+    R.id.talkTitle,
+    R.id.talkContent
 )
