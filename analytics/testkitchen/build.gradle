@@ -68,6 +68,7 @@ dependencies {
 
     implementation libs.retrofit
     implementation libs.retrofit2.kotlinx.serialization.converter
+    androidTestImplementation "com.kaspersky.android-components:kaspresso:1.6.0"
 
     testImplementation libs.junit
 }
